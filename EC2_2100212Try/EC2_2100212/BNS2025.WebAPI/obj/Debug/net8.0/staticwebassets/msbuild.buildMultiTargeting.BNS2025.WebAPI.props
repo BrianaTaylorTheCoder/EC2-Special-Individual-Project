@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BNS2025.WebAPI.props" />
+</Project>

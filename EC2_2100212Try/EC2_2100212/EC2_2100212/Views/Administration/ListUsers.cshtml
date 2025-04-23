@@ -1,0 +1,98 @@
+﻿
+@model IEnumerable<UserViewModel>
+
+@{
+    ViewData["Title"] = "All Users";
+}
+
+<h1>Manage Users</h1>
+<p>
+    <a class="btn btn-primary" asp-action="CreateUser"><i class="bi bi-plus-circle"></i>  Create New User</a>
+</p>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th hidden>
+                    User Id
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    User Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Roles
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="vertical-align:middle">
+                    <td hidden>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        <img width="50" src="~/img/@item.Image" alt="User Image">
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Roles)
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-sm btn-primary form-control" asp-action="EditUser" 
+                                asp-route-id="@item.Id"><i class="bi bi-pencil"></i><br />Edit</a>
+                            <a class="btn btn-sm btn-danger form-control" type="button" 
+                                data-bs-toggle="modal" data-bs-target="#deleteModal" asp-action="DeleteUser" 
+                                data-id="item.Id" data-name="item.Id" asp-route-id="@item.Id"><i class="bi bi-trash"></i><br />Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Delete User Modal-->
+                <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="ModalLabel">Delete User?</h3>
+                                <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close" />
+                            </div>
+                            <div class="modal-body">Are You Sure You Would Like To Delete User? @Html.DisplayFor(modelItem => item.Name)</div>
+                            <div class="modal-footer">
+                                <form method="post" asp-controller="Administration" asp-route-id="@item.Id" asp-action="DeleteUser">
+                                    <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i>Delete User</button>
+                                </form>
+                                <button class="btn btn-warning" type="button" data-bs-dismiss="modal">Cancel</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h3>There are no users in the database!</h3>
+}
+

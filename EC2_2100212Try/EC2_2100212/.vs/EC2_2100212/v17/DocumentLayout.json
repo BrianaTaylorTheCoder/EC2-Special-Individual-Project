@@ -1,0 +1,195 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDE631E9-F01D-4E68-BBE8-94960F1DE472}|EC2_2100212.ViewModels\\EC2_2100212.ViewModels.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\ec2_2100212.viewmodels\\bagmaterialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDE631E9-F01D-4E68-BBE8-94960F1DE472}|EC2_2100212.ViewModels\\EC2_2100212.ViewModels.csproj|solutionrelative:ec2_2100212.viewmodels\\bagmaterialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDE631E9-F01D-4E68-BBE8-94960F1DE472}|EC2_2100212.ViewModels\\EC2_2100212.ViewModels.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\ec2_2100212.viewmodels\\bagcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDE631E9-F01D-4E68-BBE8-94960F1DE472}|EC2_2100212.ViewModels\\EC2_2100212.ViewModels.csproj|solutionrelative:ec2_2100212.viewmodels\\bagcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\controllers\\administrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\controllers\\currencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\controllers\\currencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|c:\\users\\brian\\source\\repos\\ec2_2100212try\\ec2_2100212\\bns2025.web\\views\\currency\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A73FA7E3-38C3-44EB-AFCC-F1A0969139BA}|BNS2025.Web\\BNS2025.Web.csproj|solutionrelative:bns2025.web\\views\\currency\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BNS2025/True/SqlTable/dbo.Transactions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BagMaterialViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\EC2_2100212.ViewModels\\BagMaterialViewModel.cs",
+              "RelativeDocumentMoniker": "EC2_2100212.ViewModels\\BagMaterialViewModel.cs",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\EC2_2100212.ViewModels\\BagMaterialViewModel.cs",
+              "RelativeToolTip": "EC2_2100212.ViewModels\\BagMaterialViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:45:04.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BagCategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\EC2_2100212.ViewModels\\BagCategoryViewModel.cs",
+              "RelativeDocumentMoniker": "EC2_2100212.ViewModels\\BagCategoryViewModel.cs",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\EC2_2100212.ViewModels\\BagCategoryViewModel.cs",
+              "RelativeToolTip": "EC2_2100212.ViewModels\\BagCategoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:43:16.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "BNS2025.Web\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T20:33:06.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BNS2025.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T20:28:01.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdministrationController.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\AdministrationController.cs",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Controllers\\AdministrationController.cs",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\AdministrationController.cs",
+              "RelativeToolTip": "BNS2025.Web\\Controllers\\AdministrationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:19:09.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BNS2025.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:19:16.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BNS2025.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:18:49.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "BNS2025.Web\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:18:52.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CurrencyController.cs",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\CurrencyController.cs",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Controllers\\CurrencyController.cs",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Controllers\\CurrencyController.cs",
+              "RelativeToolTip": "BNS2025.Web\\Controllers\\CurrencyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:18:42.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Views\\Currency\\Create.cshtml",
+              "RelativeDocumentMoniker": "BNS2025.Web\\Views\\Currency\\Create.cshtml",
+              "ToolTip": "C:\\Users\\brian\\source\\repos\\EC2_2100212Try\\EC2_2100212\\BNS2025.Web\\Views\\Currency\\Create.cshtml",
+              "RelativeToolTip": "BNS2025.Web\\Views\\Currency\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T20:18:38.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.Transactions.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BNS2025/True/SqlTable/dbo.Transactions.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BNS2025/True/SqlTable/dbo.Transactions.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-23T20:17:01.501Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

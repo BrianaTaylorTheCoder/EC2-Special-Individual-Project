@@ -1,0 +1,17 @@
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\bin\Debug\net8.0\EC2_2100212.Repositories.deps.json
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\bin\Debug\net8.0\EC2_2100212.Repositories.runtimeconfig.json
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\bin\Debug\net8.0\EC2_2100212.Repositories.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\bin\Debug\net8.0\EC2_2100212.Repositories.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\bin\Debug\net8.0\EC2_2100212.Models.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\bin\Debug\net8.0\EC2_2100212.Models.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.csproj.AssemblyReference.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.AssemblyInfoInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.AssemblyInfo.cs
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100.3F60E7E3.Up2Date
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\refint\EC2_2100212.Repositories.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\EC2_2100212.Repositories.genruntimeconfig.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Repositories\obj\Debug\net8.0\ref\EC2_2100212.Repositories.dll

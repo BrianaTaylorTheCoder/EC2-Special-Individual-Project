@@ -1,0 +1,530 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "BNS2025.WebAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Account/Deposit": {
+      "put": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "CardExpirationDate",
+                  "CardNumber",
+                  "CardSecurityCode",
+                  "TransactionType",
+                  "User.ConfirmPassword",
+                  "User.Password",
+                  "UserId"
+                ],
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserId": {
+                    "type": "string"
+                  },
+                  "Source": {
+                    "type": "string"
+                  },
+                  "AccountNumber": {
+                    "type": "string"
+                  },
+                  "TransactionDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "TransactionType": {
+                    "$ref": "#/components/schemas/TransactionType"
+                  },
+                  "Amount": {
+                    "type": "number",
+                    "format": "currency"
+                  },
+                  "CardNumber": {
+                    "type": "string"
+                  },
+                  "CardSecurityCode": {
+                    "type": "string"
+                  },
+                  "CardExpirationDate": {
+                    "type": "string"
+                  },
+                  "User.Id": {
+                    "type": "string"
+                  },
+                  "User.Name": {
+                    "type": "string"
+                  },
+                  "User.Address": {
+                    "type": "string"
+                  },
+                  "User.Gender": {
+                    "$ref": "#/components/schemas/Gender"
+                  },
+                  "User.Image": {
+                    "type": "string"
+                  },
+                  "User.ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "User.ConfirmPassword": {
+                    "maxLength": 15,
+                    "minLength": 0,
+                    "type": "string",
+                    "format": "password"
+                  },
+                  "User.Roles": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "User.SelectedRoles": {
+                    "type": "string"
+                  },
+                  "User.Email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "User.UserName": {
+                    "type": "string"
+                  },
+                  "User.Password": {
+                    "maxLength": 15,
+                    "minLength": 0,
+                    "type": "string",
+                    "format": "password"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "UserId": {
+                  "style": "form"
+                },
+                "Source": {
+                  "style": "form"
+                },
+                "AccountNumber": {
+                  "style": "form"
+                },
+                "TransactionDate": {
+                  "style": "form"
+                },
+                "TransactionType": {
+                  "style": "form"
+                },
+                "Amount": {
+                  "style": "form"
+                },
+                "CardNumber": {
+                  "style": "form"
+                },
+                "CardSecurityCode": {
+                  "style": "form"
+                },
+                "CardExpirationDate": {
+                  "style": "form"
+                },
+                "User.Id": {
+                  "style": "form"
+                },
+                "User.Name": {
+                  "style": "form"
+                },
+                "User.Address": {
+                  "style": "form"
+                },
+                "User.Gender": {
+                  "style": "form"
+                },
+                "User.Image": {
+                  "style": "form"
+                },
+                "User.ImageFile": {
+                  "style": "form"
+                },
+                "User.ConfirmPassword": {
+                  "style": "form"
+                },
+                "User.Roles": {
+                  "style": "form"
+                },
+                "User.SelectedRoles": {
+                  "style": "form"
+                },
+                "User.Email": {
+                  "style": "form"
+                },
+                "User.UserName": {
+                  "style": "form"
+                },
+                "User.Password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/Withdrawal": {
+      "put": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "CardExpirationDate",
+                  "CardNumber",
+                  "CardSecurityCode",
+                  "TransactionType",
+                  "User.ConfirmPassword",
+                  "User.Password",
+                  "UserId"
+                ],
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserId": {
+                    "type": "string"
+                  },
+                  "Source": {
+                    "type": "string"
+                  },
+                  "AccountNumber": {
+                    "type": "string"
+                  },
+                  "TransactionDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "TransactionType": {
+                    "$ref": "#/components/schemas/TransactionType"
+                  },
+                  "Amount": {
+                    "type": "number",
+                    "format": "currency"
+                  },
+                  "CardNumber": {
+                    "type": "string"
+                  },
+                  "CardSecurityCode": {
+                    "type": "string"
+                  },
+                  "CardExpirationDate": {
+                    "type": "string"
+                  },
+                  "User.Id": {
+                    "type": "string"
+                  },
+                  "User.Name": {
+                    "type": "string"
+                  },
+                  "User.Address": {
+                    "type": "string"
+                  },
+                  "User.Gender": {
+                    "$ref": "#/components/schemas/Gender"
+                  },
+                  "User.Image": {
+                    "type": "string"
+                  },
+                  "User.ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "User.ConfirmPassword": {
+                    "maxLength": 15,
+                    "minLength": 0,
+                    "type": "string",
+                    "format": "password"
+                  },
+                  "User.Roles": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "User.SelectedRoles": {
+                    "type": "string"
+                  },
+                  "User.Email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "User.UserName": {
+                    "type": "string"
+                  },
+                  "User.Password": {
+                    "maxLength": 15,
+                    "minLength": 0,
+                    "type": "string",
+                    "format": "password"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "UserId": {
+                  "style": "form"
+                },
+                "Source": {
+                  "style": "form"
+                },
+                "AccountNumber": {
+                  "style": "form"
+                },
+                "TransactionDate": {
+                  "style": "form"
+                },
+                "TransactionType": {
+                  "style": "form"
+                },
+                "Amount": {
+                  "style": "form"
+                },
+                "CardNumber": {
+                  "style": "form"
+                },
+                "CardSecurityCode": {
+                  "style": "form"
+                },
+                "CardExpirationDate": {
+                  "style": "form"
+                },
+                "User.Id": {
+                  "style": "form"
+                },
+                "User.Name": {
+                  "style": "form"
+                },
+                "User.Address": {
+                  "style": "form"
+                },
+                "User.Gender": {
+                  "style": "form"
+                },
+                "User.Image": {
+                  "style": "form"
+                },
+                "User.ImageFile": {
+                  "style": "form"
+                },
+                "User.ConfirmPassword": {
+                  "style": "form"
+                },
+                "User.Roles": {
+                  "style": "form"
+                },
+                "User.SelectedRoles": {
+                  "style": "form"
+                },
+                "User.Email": {
+                  "style": "form"
+                },
+                "User.UserName": {
+                  "style": "form"
+                },
+                "User.Password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Gender": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "TransactionType": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

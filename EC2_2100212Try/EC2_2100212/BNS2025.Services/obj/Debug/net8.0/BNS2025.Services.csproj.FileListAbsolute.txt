@@ -1,0 +1,17 @@
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\bin\Debug\net8.0\BNS2025.Services.deps.json
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\bin\Debug\net8.0\BNS2025.Services.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\bin\Debug\net8.0\BNS2025.Services.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\bin\Debug\net8.0\BNS2025.Models.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\bin\Debug\net8.0\BNS2025.ViewModels.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\bin\Debug\net8.0\BNS2025.Models.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\bin\Debug\net8.0\BNS2025.ViewModels.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025.Services.csproj.AssemblyReference.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025.Services.AssemblyInfoInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025.Services.AssemblyInfo.cs
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025.Services.csproj.CoreCompileInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025..AFFD1D61.Up2Date
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025.Services.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\refint\BNS2025.Services.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\BNS2025.Services.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Services\obj\Debug\net8.0\ref\BNS2025.Services.dll

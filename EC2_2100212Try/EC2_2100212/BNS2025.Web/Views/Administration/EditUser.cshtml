@@ -1,0 +1,94 @@
+﻿@model UserViewModel
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<h1>Edit User</h1>
+<hr />
+<div class="row">
+    <div>
+        <form method="post" asp-action="EditUser" enctype="multipart/form-data">
+            <div class="card-group">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="card">
+                    <img src="~/img/@Model.Image" id="imgImage" alt="Image" style="width:75%; align-self:center" />
+                    <div class="form-group">
+                        <div class="custom-file m-3">
+                            <input hidden asp-for="Image" type="text" />
+                            <input asp-for="ImageFile" type="file" class="form-control custom-file-input" id="fuimage"
+                                   onchange="document.getelementbyid('imgImage').src = window.url.createobjecturl(this.files[0])" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="form-floating mb-1">
+                        <input asp-for="Id" disabled class="form-control" />
+                        <label asp-for="Id" class="form-label"></label>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input asp-for="Name" class="form-control" />
+                        <label asp-for="Name"></label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input asp-for="UserName" class="form-control" />
+                        <label asp-for="UserName" class="control-label"></label>
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input asp-for="Email" class="form-control" />
+                        <label asp-for="Email" class="control-label"></label>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <select asp-for="Gender" asp-items="Html.GetEnumSelectList<BNS2025.Models.Gender>()" class="form-control form-select" aria-required="true">
+                            <option value="-1" selected>
+                                Select Gender
+                            </option>
+                        </select>
+                        <label asp-for="Gender"></label>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input asp-for="Address" class="form-control" />
+                        <label asp-for="Address"></label>
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    <div class="d-grid">
+                        <input type="submit" value="Update User" asp-action="EditUser" class="btn btn-primary" />
+                        <a class="btn btn-warning" asp-action="ListUsers">Back To List</a>
+                    </div>
+                </div>
+                <div class="card p-3">
+                    <h4 class="mt-5">Assigned Roles</h4>
+                    @Html.ListBoxFor(model => model.Roles, new MultiSelectList(ViewBag.Roles, "Name", "Name"),
+                             new { id = "multiSelectDropDown", @class = "form-control form-select", multiple = "multiple" })
+                    <div class="d-grid p-3">
+                        <button type="submit" class="btn btn-primary" asp-route-id="@Model.Id" asp-action="UpdateUserRoles">Update</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-group col-8 mt-5">
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section scripts
+{
+    <script>
+        $(function () {
+            //normal dropdown
+            $("#normalDropDown").chosen();
+
+            //multiselect dropdown
+            $("#multiSelectDropDown").chosen();
+        });
+    </script>
+}

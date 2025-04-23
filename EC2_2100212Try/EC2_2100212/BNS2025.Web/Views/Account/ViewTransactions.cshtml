@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TransactionViewModel>
+
+@{
+    ViewData["Title"] = "Transactions";
+}
+<h1>Manage Transactions</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="CreateTransaction"><i class="bi bi-plus-circle"></i> Create New Transaction</a>
+</p>
+<table class="table table-striped">
+
+    <thead class="table-dark">
+        <tr class="fw-bold">
+        <tr>
+            <td>Customer</td>
+            <td>Account Number</td>
+            <td>Card Number</td>
+            <td>Transaction Date</td>
+            <td>Transaction Type</td>
+            <td>Source</td>
+            <td>Amount</td>
+           @* <td>Options</td>*@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr style="vertical-align:middle">
+                <td>@Html.DisplayFor(modelItem => item.User.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.AccountNumber)</td>
+                <td>@Html.DisplayFor(modelItem => item.CardNumber)</td>
+                <td>@Html.DisplayFor(modelItem => item.TransactionDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.TransactionType)</td>
+                <td>@Html.DisplayFor(modelItem => item.Source)</td>
+                <td>@Html.DisplayFor(modelItem => item.Amount)</td>
+            </tr>
+        }
+    </tbody>
+</table>

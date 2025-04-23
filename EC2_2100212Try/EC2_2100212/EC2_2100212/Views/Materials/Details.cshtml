@@ -1,0 +1,27 @@
+﻿@model MaterialViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="container">
+    <div class="mt-3">
+        <h1>Material Details</h1>
+        <hr />
+        <div class="card-group col-8">
+            <div class="card">
+                <img class="card-img-top" src="~/img/@Model?.Image" style="60%" alt="Card image cap">
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title mb-5">@Html.DisplayFor(model => model.Name)</h2>
+                </div>
+                <form asp-action="Details">
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-sm btn-info  form-control" asp-action="Edit" asp-route-id="@Model.Id"><i class="bi bi-pencil"></i> Edit</button>
+                        <a class="btn btn-sm btn-primary form-control" asp-action="Index"><i class="bi bi-card-list"></i> Back to List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "EC2_2100212\\EC2_2100212.Web.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BNS2025.Web\\BNS2025.Web.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BNS2025.WebAPI\\BNS2025.WebAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

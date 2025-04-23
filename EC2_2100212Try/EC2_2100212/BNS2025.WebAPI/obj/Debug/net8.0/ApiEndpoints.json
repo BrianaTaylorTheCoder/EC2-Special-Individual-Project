@@ -1,0 +1,300 @@
+[
+  {
+    "ContainingType": "BNS2025.WebApi.Controllers.AccountController",
+    "Method": "Deposit",
+    "RelativePath": "api/Account/Deposit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AccountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransactionDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransactionType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Amount",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardSecurityCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardExpirationDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Gender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Image",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ConfirmPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Roles",
+        "Type": "System.Collections.Generic.ICollection\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.SelectedRoles",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "BNS2025.WebApi.Controllers.AccountController",
+    "Method": "Withdrawal",
+    "RelativePath": "api/Account/Withdrawal",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AccountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransactionDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransactionType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Amount",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardSecurityCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CardExpirationDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Gender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Image",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ConfirmPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Roles",
+        "Type": "System.Collections.Generic.ICollection\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.SelectedRoles",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  }
+]

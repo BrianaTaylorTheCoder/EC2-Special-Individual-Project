@@ -1,0 +1,67 @@
+﻿
+@model IEnumerable<RoleViewModel>
+
+@{
+    ViewData["Title"] = "All Roles";
+}
+
+<h1>Manage Roles</h1>
+<p>
+    <a class="btn btn-primary" asp-action="CreateRole"><i class="bi bi-plus-circle"></i> Create New Role</a>
+</p>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+       <thead class="table-dark">
+            <tr class="fw-bold">
+                <th>
+                    Role Name
+                </th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="vertical-align:middle">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td >
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-sm btn-primary" asp-action="EditRole" asp-route-id="@item.Id"><i class="bi bi-pencil"></i> Edit</a>
+                            <a class="btn btn-sm btn-danger"  type="button" data-bs-toggle="modal" 
+                                data-bs-item="@item" data-bs-target="#deleteModal"><i class="bi bi-trash"></i> Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                 <!-- Delete User Modal-->
+                <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="ModalLabel">Delete Role?</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" />
+                            </div>
+                            <div class="modal-body">Are You Sure You Would Like To Delete role? <br/><strong>
+                                @Html.DisplayFor(modelItem => item.Name)
+                                </strong>
+                            </div>
+                            <div class="modal-footer">
+                                <form method="post" asp-controller="Administration" asp-route-id="@item.Id" asp-action="DeleteRole">
+                                    <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i>Delete Role</button>
+                                </form>
+                                <button class="btn btn-warning" type="button" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h3>There are no roles in the database!</h3>
+}

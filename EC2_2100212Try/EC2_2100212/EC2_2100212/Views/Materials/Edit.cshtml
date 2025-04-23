@@ -1,0 +1,50 @@
+﻿@model MaterialViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Material</h1>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form enctype="multipart/form-data" asp-action="Edit">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="card-group col-8">
+                <div class="card">
+                    <img src="~/img/@Model.Image" id="imgImage" alt="Material Image" style="width:60%; align-self:center" />
+                    <div class="form-group">
+                        <div class="custom-file m-3">
+                            <input hidden asp-for="Image" type="text" />
+                            <input asp-for="ImageFile" type="file" class="form-control custom-file-input" id="fuImage"
+                                   onchange="document.getElementById('imgImage').src = window.URL.createObjectURL(this.files[0])" />
+                            <label class="custom-file-label" for="Image"></label>
+                        </div>
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Material Details</h4>
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <input type="submit" value="Edit" class="btn btn-info" />
+                        <a class="btn btn-primary" asp-action="Index"><i class="bi bi-card-list"></i> Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,15 @@
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\bin\Debug\net8.0\BNS2025.ViewModels.deps.json
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\bin\Debug\net8.0\BNS2025.ViewModels.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\bin\Debug\net8.0\BNS2025.ViewModels.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\bin\Debug\net8.0\BNS2025.Models.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\bin\Debug\net8.0\BNS2025.Models.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025.ViewModels.csproj.AssemblyReference.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025.ViewModels.AssemblyInfoInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025.ViewModels.AssemblyInfo.cs
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025..F8D9A866.Up2Date
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025.ViewModels.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\refint\BNS2025.ViewModels.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\BNS2025.ViewModels.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.ViewModels\obj\Debug\net8.0\ref\BNS2025.ViewModels.dll

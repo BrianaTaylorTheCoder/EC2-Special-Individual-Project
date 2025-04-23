@@ -1,0 +1,70 @@
+﻿@model TransactionViewModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<h1>Create Transaction</h1>
+
+<h3>Deposit or Withdrawals</h3>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form enctype="multipart/form-data" asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <select asp-for="UserId" asp-items="@ViewBag.Users" data-placeholder="select user" 
+                class="form-control form-select chosen">
+                </select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransactionType"></label>
+                <select asp-for="TransactionType" asp-items="Html.GetEnumSelectList<BNS2025.Models.TransactionType>()" 
+                    data-placeholder="-- select transaction type --" data class="form-control form-select chosen" aria-required="true">
+                </select>
+                <span asp-validation-for="TransactionType" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="CurrencyId" class="control-label"></label>
+                <select asp-for="CurrencyId" asp-items="@ViewBag.Currencies" data-placeholder="select currency" 
+                class="form-control form-select chosen">
+                </select>
+                <span asp-validation-for="CurrencyId" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="AccountNumber" class="control-label"></label>
+                <input asp-for="AccountNumber" class="form-control" />
+                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CardNumber" class="control-label"></label>
+                <input asp-for="CardNumber" class="form-control" />
+                <span asp-validation-for="CardNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CardExpirationDate" class="control-label"></label>
+                <input asp-for="CardExpirationDate" class="form-control" />
+                <span asp-validation-for="CardExpirationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CardSecurityCode" class="control-label"></label>
+                <input asp-for="CardSecurityCode" class="form-control" />
+                <span asp-validation-for="CardSecurityCode" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-5">
+                <div class="d-grid gap-2">
+                    <input type="submit" value="Create Transaction" asp-action="CreateTransaction" class="btn btn-primary" />
+                    <a class="btn btn-info" asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

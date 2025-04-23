@@ -1,0 +1,12 @@
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\bin\Debug\net8.0\EC2_2100212.Models.deps.json
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\bin\Debug\net8.0\EC2_2100212.Models.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\bin\Debug\net8.0\EC2_2100212.Models.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\EC2_2100212.Models.csproj.AssemblyReference.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\EC2_2100212.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\EC2_2100212.Models.AssemblyInfoInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\EC2_2100212.Models.AssemblyInfo.cs
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\EC2_2100212.Models.csproj.CoreCompileInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\EC2_2100212.Models.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\refint\EC2_2100212.Models.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\EC2_2100212.Models.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\EC2_2100212.Models\obj\Debug\net8.0\ref\EC2_2100212.Models.dll

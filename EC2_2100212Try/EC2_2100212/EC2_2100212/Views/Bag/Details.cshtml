@@ -1,0 +1,39 @@
+﻿@model BagViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Bag Details</h1>
+
+<div>
+    <hr />
+
+    <div class="card mb-3" style="max-width: 760px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="~/img/@Model.Image" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title text-center">@Model.Brand</h2>
+                    <p class="card-text fst-italic text-center">@Model.Model</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="fw-bold">Colour: </span>@Model.Colour</li>
+                        <li class="list-group-item"><span class="fw-bold">ManufactureDate: </span> @Html.DisplayFor(model => model.ManufactureDate)</li>
+                        <li class="list-group-item"><span class="fw-bold">Categories: </span>@Model.Categories</li>
+                        <li class="list-group-item"><span class="fw-bold">Materials: </span>@Model.Materials</li>
+                        <li class="list-group-item"><span class="fw-bold">Price: </span>@Model.Price.ToString("c2")</li>
+                    </ul>
+
+                    <div class="form-group mt-3">
+                        <div class="d-grid">
+                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+                            <a class="btn btn-info" asp-action="Index">Back to List</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

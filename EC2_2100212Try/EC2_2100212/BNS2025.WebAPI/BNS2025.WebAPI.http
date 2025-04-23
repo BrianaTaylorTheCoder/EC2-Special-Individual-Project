@@ -1,0 +1,7 @@
+@BNS2025.WebAPI_HostAddress = https://localhost:7099 
+//http://localhost:5066
+
+GET {{BNS2025.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

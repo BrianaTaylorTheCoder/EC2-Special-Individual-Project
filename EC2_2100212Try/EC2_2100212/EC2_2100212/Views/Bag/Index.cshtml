@@ -1,0 +1,91 @@
+﻿@model IEnumerable<BagViewModel>
+
+@{
+    ViewData["Title"] = "Manage Bag";
+}
+
+<h1>Manage Bags</h1>
+<p>
+    <a class="btn btn-primary" asp-action="Create"><i class="bi bi-plus-circle"></i> Create New Bag</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Colour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categories)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Materials)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManufactureDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img width="50" src="~/img/@item.Image" alt="Movie Image">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Colour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categories)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Materials)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ManufactureDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <div class="btn-group btn-group-sm" role="group">
+                        <a type="button" class="btn btn-primary form-control" asp-action="Edit" asp-route-id="@item.Id">
+                            <i class="bi bi-pencil"></i><br />Edit
+                        </a>
+                        <a type="button" class="btn btn-info form-control" asp-action="Details" asp-route-id="@item.Id">
+                            <i class="bi bi-card-list"></i> Details
+                        </a>
+                        <a type="button" class="btn btn-danger form-control" asp-action="Delete" asp-route-id="@item.Id">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

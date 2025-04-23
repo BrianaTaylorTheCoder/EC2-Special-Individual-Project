@@ -1,0 +1,26 @@
+﻿@{
+    var SuccessMessage = TempData["SuccessMessage"] as string;
+    var ErrorMessage = TempData["ErrorMessage"] as string;
+    var infoMessage = TempData["InfoMessage"] as string;
+}
+
+@if (!string.IsNullOrEmpty(SuccessMessage))
+{
+    <div class="alert alert-success" role="alert">
+        @SuccessMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @ErrorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(infoMessage))
+{
+    <div class="alert alert-info" role="alert">
+        @infoMessage
+    </div>
+}

@@ -1,0 +1,17 @@
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\bin\Debug\net8.0\BNS2025.Repositories.deps.json
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\bin\Debug\net8.0\BNS2025.Repositories.runtimeconfig.json
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\bin\Debug\net8.0\BNS2025.Repositories.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\bin\Debug\net8.0\BNS2025.Repositories.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\bin\Debug\net8.0\BNS2025.Models.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\bin\Debug\net8.0\BNS2025.Models.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.csproj.AssemblyReference.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.AssemblyInfoInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.AssemblyInfo.cs
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025..5C801DB8.Up2Date
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\refint\BNS2025.Repositories.dll
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.pdb
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\BNS2025.Repositories.genruntimeconfig.cache
+C:\Users\brian\source\repos\EC2_2100212Try\EC2_2100212\BNS2025.Repositories\obj\Debug\net8.0\ref\BNS2025.Repositories.dll

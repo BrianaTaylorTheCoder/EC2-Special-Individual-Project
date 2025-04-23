@@ -1,0 +1,54 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Log in";
+    var returnUrl = ViewData["ReturnUrl"] as string;
+}
+
+<div class="col-md-6">
+    <section>
+        @* Display error or success messages *@
+        <div class="container mt-3">
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+            else if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
+        </div>
+
+        <form id="account" method="post">
+            <h2>Log in</h2>
+
+            @* Include returnUrl as hidden input if it exists *@
+            @if (!string.IsNullOrEmpty(returnUrl))
+            {
+                <input type="hidden" name="returnUrl" value="@returnUrl" />
+            }
+
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="UserName" class="form-control" autocomplete="username" aria-required="true" />
+                <label asp-for="UserName" class="form-label"></label>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Password" class="form-control" type="password" autocomplete="current-password" aria-required="true" />
+                <label asp-for="Password" class="form-label"></label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div>
+                <button id="login-submit" type="submit" class="w-100 btn btn-primary">Log in</button>
+            </div>
+
+        </form>
+    </section>
+</div>

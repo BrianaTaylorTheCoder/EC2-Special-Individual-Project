@@ -1,0 +1,80 @@
+﻿@inject SignInManager<ApplicationUser> SignInManager;
+<!DOCTYPE html>
+<html lang="en">
+<!-- Student Name: Briana Taylor
+ID Number: 2100212
+Module: Enterprise Computing 2 Semester 2 AY 2024/25
+Activity: Milestone 1 -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LUXE ARCHIVE</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EC2_2100212.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LUXE ARCHIVE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">About Us</a>
+                        </li>
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  text-dark dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">Administrator</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-controller="Materials" asp-action="Index">Manage Materials</a>
+                                    <a class="dropdown-item" asp-controller="Bag" asp-action="Index">Manage Bags</a>
+                                    <a class="dropdown-item" asp-controller="Categories" asp-action="Index">Manage Categories</a>
+                                    <a class="dropdown-item" asp-controller="Orders" asp-action="ViewOrders">View Orders</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" asp-controller="Administration" asp-action="ListUsers">Manage Users</a>
+                                    <a class="dropdown-item" asp-controller="Administration" asp-action="ListRoles">Manage Roles</a>
+                                </div>
+                            </li>
+                        }
+                        <form class="d-flex">
+                            <partial name="_LoginPartial" />
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - LUXE ARCHIVE - <a asp-area="" asp-controller="Home" asp-action="Privacy">About Us</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

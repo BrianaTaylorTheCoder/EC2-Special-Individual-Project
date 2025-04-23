@@ -1,0 +1,83 @@
+﻿@model OrderViewModel
+@{
+    ViewData["Title"] = "Buy Now";
+}
+<div class="container-fluid">
+    <div class="mt-3">
+        <h1>Bag Overview</h1>
+        @if (ViewBag.Result != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.Result
+                <button type="button" class="btn-close" data-dismiss="alert" />
+            </div>
+        }
+
+        <p>
+            <a class="btn btn-primary" asp-action="Index"><i class="bi bi-card-list"></i> Back To List</a>
+        </p>
+        <hr />
+        <form method="post" asp-action="BuyNow" enctype="multipart/form-data">
+            <input hidden asp-for="Bag" type="text" />
+            <input hidden asp-for="UserId" type="text" />
+            <div class="card-group col-12">
+                <div class="card col-2">
+                    <img asp-for="Image" class="card-img-top" src="~/img/@Model?.Bag.Image">
+                </div>
+                <div class="card col-5 p-5">
+                    <h2>Bag Details</h2>
+                    <h3 class="card-title mb-3">@Html.DisplayFor(model => model.Bag.Brand)</h3>
+                    <h3 class="card-title mb-3">@Html.DisplayFor(model => model.Bag.Model)</h3>
+                    <h5 class="card-title mt-3"> @Html.DisplayNameFor(model => model.Bag.Colour)</h5>
+                    <span>@Html.DisplayFor(model => model.Bag.Colour)</span>
+                    <h5 class="card-title mt-3"> @Html.DisplayNameFor(model => model.Bag.Quantity)</h5>
+                    <span>@Html.DisplayFor(model => model.Bag.Quantity)</span>
+                    <h5 class="card-title mt-3"> @Html.DisplayNameFor(model => model.Bag.Price)</h5>
+                    <span>@Html.DisplayFor(model => model.Bag.Price)</span>
+                    <h5 class="card-title mt-3"> @Html.DisplayNameFor(model => model.Bag.ManufactureDate)</h5>
+                    <span>@Html.DisplayFor(model => model.Bag.ManufactureDate)</span>
+                    <h5 class="card-title mt-3"> @Html.DisplayNameFor(model => model.Bag.Categories)</h5>
+                    <span>@Html.DisplayFor(model => model.Bag.Categories)</span>
+                    <h5 class="card-title mt-3"> @Html.DisplayNameFor(model => model.Bag.Materials)</h5>
+                    <span>@Html.DisplayFor(model => model.Bag.Materials)</span>
+                </div>
+                <div class="card col-5 p-5">
+                    <h2>Place an order</h2>
+                    <div class="form-floating mb-1">
+                        <input asp-for="ShippingAddress" class="form-control" aria-required="true" />
+                        <label asp-for="ShippingAddress"></label>
+                        <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input asp-for="CardNumber" class="form-control" aria-required="true" />
+                        <label asp-for="CardNumber"></label>
+                        <span asp-validation-for="CardNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-1 ">
+                        <input asp-for="CardExpirationDate" class="form-control" aria-required="true" />
+                        <label asp-for="CardExpirationDate"></label>
+                        <span asp-validation-for="CardExpirationDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-1 ">
+                        <input asp-for="CardSecurityCode" class="form-control" aria-required="true" />
+                        <label asp-for="CardSecurityCode"></label>
+                        <span asp-validation-for="CardSecurityCode" class="text-danger"></span>
+                    </div>
+                    <input asp-for="Total" hidden />
+                    <div class="form-floating mb-1">
+                        <input asp-for="Quantity" class="form-control" aria-required="true" />
+                        <label asp-for="Quantity"></label>
+                        <span asp-validation-for="Quantity" class="text-danger"></span>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="submit" class="btn btn-small btn-primary" asp-route-id="@Model.Bag.Id"
+                                asp-action="BuyNow">
+                            <i class="bi bi-bag"></i> Buy Now
+                        </button>
+                         <button class="btn btn-warning" type="button" asp-action="Index">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<CurrencyViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Manage Currencies</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create"><i class="bi bi-plus-circle"></i> Create New Currency</a>
+</p>
+<table class="table table-striped">
+
+    <thead class="table-dark">
+        <tr class="fw-bold">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Short Name
+            </th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr style="vertical-align:middle">
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShortName)
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i> Edit</a>
+                        <a class="btn btn-sm btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal-@item.Id" 
+                            asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i> Delete</a>
+                    </div>
+                </td>
+            </tr>
+            <!-- Delete Modal-->
+            <div class="modal fade" id="deleteModal-@item.Id" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title fs-5" id="ModalLabel-@item.Id">Confirm Delete?</h3>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" />
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you would like to delete this currency? <br /><br /><strong>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </strong>
+                        </div>
+                        <div class="modal-footer">
+                            <form method="post" asp-controller="Currency" asp-route-id="@item.Id" asp-action="Delete">
+                                <div class="btn-group" role="group">
+
+                                <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i> Delete</button>
+                                <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Cancel</button>
+                           </div> </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </tbody>
+</table>

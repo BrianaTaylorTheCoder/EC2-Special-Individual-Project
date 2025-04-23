@@ -1,0 +1,71 @@
+﻿@model RoleViewModel
+
+@{
+    ViewData["Title"] = "Edit Roles";
+}
+
+<h1>Edit Role</h1>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="EditRole">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <input type="submit" class="btn btn-primary" asp-action="EditRole" />
+                        <a class="btn btn-warning" asp-action="ListRoles">Cancel</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Users in this role</h2>
+    @if (Model.Users.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        UserName
+                    </th>
+                    <th>
+                        Email Address
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td>
+                            @user.UserName
+                        </td>
+                        <td>
+                            @user.Email
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h4>No Users in this role</h4>
+    }
+</form>
